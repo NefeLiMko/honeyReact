@@ -1,38 +1,86 @@
-.App {
+.bigImage{
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+  "h"
+  "n";
+  width: 1200px;
+  grid-gap: 10px;
+
+}
+
+.app-wrapper {
+    background-color: rgba(0,0,0,0);
+  background-repeat: no-repeat;
+  background-image: url('bigBack.jpg');
+  background-size: cover;
+  background-position: left top;
+  width: 100%;
+  height: 800px;
+  } 
+
+.header{
+  grid-area: h;
+  height: 40px;
+  width: 1200px;
+  background-color: #333333;
+}
+
+
+
+.logo{
+  grid-area: log;
+  width: 85px;
+  margin-right: 10px;
+  padding: 0 30px;
+  height: 85px;
+  border-right: 1px #eaeaea solid;
+
+}
+
+.nav{
+  display: grid;
+  grid-template-areas: "log dd";
+  grid-area: n;
+  background-color: #ffffff;
+  padding: 0 15px;
+  color: #30af10;
+}
+
+.dropdown{
+  display: grid;
+  grid-template-areas:  "hom hon g s cart clicker";
+  grid-area: dd;
+  padding-top: 30px;
   text-align: center;
+
+}
+.home{
+  grid-area: hom;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.honey{
+  grid-area: hon;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.green{
+  grid-area: g;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search{
+  grid-area: s;
 }
 
-.App-link {
-  color: #61dafb;
+.cart{
+  grid-area: cart;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clicker{
+  grid-area: clicker;
+}
+
+
+.menu{
+    height: 1500px;
 }
